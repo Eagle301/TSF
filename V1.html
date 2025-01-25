@@ -56,7 +56,7 @@
 								<h1>Vefsíðugerð</h1>
 							</header>
 							<div class="content">
-								<p>Fyrsta verkefni námskeiðsins er að setja upp vefsíðu sem hýsir framtíðar verkefni og feril skrá</p>
+								<p>Fyrsta verkefni námskeiðsins er að setja upp vefsíðu sem hýsir framtíðar verkefni og ferilskrá</p>
 							</div>
 						</div>
 					</section>
@@ -70,17 +70,33 @@
 									<header class="major">
 										<h2>Undirbúningur</h2>
 									</header>
-									<p>Ég byrjaði á að horfa á kynningar myndbandið um verkefnið og þar sem ég hafði smá reynslu á html skriftum var ég ekki lengi að hefjast handa. Ég byrjaði á því að hlaða niður <a href="https://brackets.io/?lang=en">Brackets</a> þar sem mér fannst "Live" eiginleikinn og "Git intergration" hjá því aðdragandi. Svo fór ég að skoða sniðmát fyrir vefsíðuna og fann eitthvað sem mér leist á og var það "Forty" eftir <a href="https://html5up.net/">HTML5UP</a> og er það sniðmát þessarar vefsíðu. </p>
+									<p>Ég byrjaði á að horfa á kynningar myndbandið um verkefnið og þar sem ég hafði smá reynslu á html skriftum var ég ekki lengi að hefjast handa. Ég byrjaði á því að hlaða niður <a href="https://brackets.io/?lang=en">Brackets</a> og <a href="https://git-scm.com">Gitbash</a> þar sem mér fannst "Live" eiginleikinn og "Git intergration" hjá því aðdragandi. Svo fór ég að skoða sniðmát fyrir vefsíðuna og fann eitthvað sem mér leist vel á og var það "Forty" eftir <a href="https://html5up.net/">HTML5UP</a> því það var einfalt og skilvirkt uppsett og er það sniðmát þessarar vefsíðu. </p>
 								</div>
 							</section>
                         <section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Undirbúningur</h2>
+										<h2>Uppsetning</h2>
 									</header>
-									<p>Ég byrjaði á að horfa á kynningar myndbandið um verkefnið og þar sem ég hafði smá reynslu á html skriftum var ég ekki lengi að hefjast handa. Ég byrjaði á því að hlaða niður <a href="https://brackets.io/?lang=en">Brackets</a> þar sem mér fannst "Live" eiginleikinn og "Git intergration" hjá því aðdragandi. Svo fór ég að skoða sniðmát fyrir vefsíðuna og fann eitthvað sem mér leist á og var það "Forty" eftir <a href="https://html5up.net/">HTML5UP</a> og er það sniðmát þessarar vefsíðu. </p>
+									<p>Það fyrsta sem ég gerði var að fara yfir sniðmátið og aðlaga það að mínum þörfum, ég tók út það sem mér fannst ekki passa og bætti því sem vantaði. Mér fannst mikilvægt að hafa aðgengilegt valmyndarkerfi (menu) sem gerir notendum auðvelt að fara á milli síðna á vefsíðunni. Þetta hjálpar til við að halda síðunni skipulagðri og bætir heildarupplifunina með skýru og einföldu flæði. Ég breytti ekki litarþemanu því mér fannst það nokkuð flott en setti inn nýja mynd undir verkefni 1, það var skjáskot af html kóðanum og kom það mjög vel út með myndina alveg óunna.  
+                                        
+                                        Helsta viðbótin sem ég setti inn er ferilskráin. </p>
 								</div>
 							</section>
+                        
+                        <section>
+								<div class="inner">
+									<header class="major">
+										<h2>Ferilskrá</h2>
+									</header>
+									<p>Þegar kom að því að setja inn ferilskrána mína vildi ég að hún væri aðgengileg sem PDF-skrá, svo að notendur gætu auðveldlega skoðað hana án þess að þurfa að hlaða henni niður. Til að framkvæma þetta þurfti ég að finna lausn fyrir innbyggingu á PDF-skjölum í HTML. Eftir að hafa leitað á Google fann ég út að best væri að nota <embed> tög til að birta PDF-skjalið beint á síðunni. Ég byrjaði á því að bæta PDF-skránni við verkefnamöppuna og skrifaði síðan eftirfarandi kóða til að birta hana á vefsíðunni:
+                                        <pre><code> &lt;embed> style="width:90%;height:100%" src="CV_EGA.pdf" type="application/pdf"> &lt;/embed></code></pre> Þar næst fínstillti ég stærðina á skjánum með því að stilla width og height, þar sem markmiðið var að ferilskráin yrði þægileg í skoðun án þess að hún þyrfti að fara úr skjánum.</p>
+									<ul class="actions">
+										<li><a href="CV.html" class="button next">Skoða Ferilskránna</a></li>
+									</ul>
+								</div>
+							</section>
+                        
 
 						<!-- Two -->
 							<section id="two" class="spotlights">
@@ -91,128 +107,50 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Github uppsetning</h3>
+												<h3>Github og git bash uppsetning</h3>
 											</header>
-											<p>Uppsetning á github var gert skref fyrir skref eftir kennslumyndbandi. Fyrst og fremst gerði ég reposatory undir nafninu <a href="https://html5up.net/">TSF_EGA</a> svo setti ég inn </p>
+											<p>Uppsetning á github og git bash var gert skref fyrir skref eftir kennslumyndbandi. Fyrst og fremst gerði ég reposatory undir nafninu <a href="https://html5up.net/">TSF_EGA</a>, þar er þessi vefsíða hýst og til þess að setja inn allar skrár og auðvelda framtíðar uppfærslur á þessari vefsíðu notaðist ég við git bash og notaði eftirfarandi skipanir:</p>
+                                            
+                                            <pre><code>git init
+git remote add origin <slóð á repository>
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+</code></pre>
+                                            <p>Svo með þessum skipunum var búið að setja allar skrárnar inn í repository-ið á github og þá fann ég linkinn fyrir vefsíðuna í "pages" glugganum.</p>
+                                            
 											<ul class="actions">
-												<li><a href="https://www.youtube.com/watch?v=OltY8JIaP-4" class="button">Kennslumyndbandið</a></li>
+												<li><a href="https://www.youtube.com/watch?v=tRZGeaHPoaw" class="button">Kennslumyndbandið</a></li>
 											</ul>
 										</div>
 									</div>
-								</section>
+								</section>     
                             </section>
+                                
                                 <section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Undirbúningur</h2>
+										<h2>Áskoranir og lausnir</h2>
 									</header>
-									<p>Ég byrjaði á að horfa á kynningar myndbandið um verkefnið og þar sem ég hafði smá reynslu á html skriftum var ég ekki lengi að hefjast handa. Ég byrjaði á því að hlaða niður <a href="https://brackets.io/?lang=en">Brackets</a> þar sem mér fannst "Live" eiginleikinn og "Git intergration" hjá því aðdragandi. Svo fór ég að skoða sniðmát fyrir vefsíðuna og fann eitthvað sem mér leist á og var það "Forty" eftir <a href="https://html5up.net/">HTML5UP</a> og er það sniðmát þessarar vefsíðu. </p>
+									<p>Ein helsta áskorunin var að stilla PDF-skjalið þannig að það væri aðgengilegt á öllum skjástærðum, sérstaklega fyrir farsíma. Til að leysa þetta þurfti ég að prófa ýmsar stærðastillingar og tryggja að síða væri samhæfð við mismunandi tæki. Auk þess tók smávægilegur tími að átta mig á hvernig ætti að hlaða síðunni upp á GitHub með réttri uppsetningu.</p>
 								</div>
 							</section>
                                 
-                                
-								<section>
-									<a href="generic.html" class="image">
-										<img src="images/pic09.jpg" alt="" data-position="top center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="minor">
-												<h3>Rhoncus magna</h3>
-											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-							</section>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button next">Get Started</a></li>
-									</ul>
-								</div>
 							</section>
 
 					</div>
 
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
+
 
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Egill Grétar Andrason</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
