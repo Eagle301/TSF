@@ -51,10 +51,10 @@
 					<section id="banner" class="style2">
 						<div class="inner">
 							<span class="image">
-								<img src="images/pic07.jpg" alt="" />
+								<img src="images/Skurdur.jpg" alt="" />
 							</span>
 							<header class="major">
-								<h1>Verkefni Ekki Hafið</h1>
+								<h1>Parametrísk hönnun og tölvustuddur skurður</h1>
 							</header>
 							<div class="content">
 								<p> </p>
@@ -62,6 +62,174 @@
 						</div>
 					</section>
 
+<!-- Main -->
+<div id="main">
+
+    <!-- Undirbúningur -->
+    <section id="one">
+        <div class="inner">
+            <header class="major">
+                <h2>Undirbúningur</h2>
+            </header>
+            <span class="image right"><img style="width:300px;height:250px" src="images/innblastur.jpg" alt="" /></span>
+            <p>Ég byrjaði á því að kynna mér verkefnið í gegnum leiðbeiningar og myndbönd. Þar sem ég hafði áður unnið með CAD hugbúnað ákvað ég að nota <a href="https://www.autodesk.com/products/fusion-360/overview">Autodesk Fusion 360</a> fyrir parametrísku hönnunina og <a href="https://inkscape.org/">Inkscape</a> fyrir vínylskerðinguna. Ég halaði niður þessum forritum og byrjaði að brainstorma hugmyndir.</p>
+            <p>Ég hafði lengi haft áhuga á flugi og ákvað því að búa til parametríska hönnun byggða á <strong>Cessna 172</strong> flugvél. Ég safnaði saman nokkrum myndum á netinu sem ég gat notað sem "canvas" í Fusion 360 til að tryggja nákvæmni í útfærslunni.</p>
+        </div>
+    </section>
+
+    
+
+							<section id="two" class="spotlights">
+								<section>
+									<a href="https://bylur.info/" class="image">
+										<img src="images/Vynil.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h2>Vínylskurður</h2>
+											</header>
+											<p>Ég rek lítið smoothie fyrirtæki, <a href="https://bylur.info">Bylur</a>, og langaði að gera einfaldan límmiða fyrir það. Ég tók logoið okkar og setti það inn í Inkscape, þar sem ég gerði nokkur afrit af því til að skera út nokkra límmiða í einu.</p>
+            <p>Ferlið gekk mjög vel, og ég var ánægður með útkomuna.</p>
+                                    
+											<ul class="actions">
+												<li><a href="https://bylur.info/" class="button">Bylur.info</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>     
+                            </section>
+
+    <!-- Parametrísk hönnun -->
+    <section id="one">
+        <div class="inner">
+            <header class="major">
+                <h2>Parametrísk hönnun</h2>
+            </header>
+            <p>Ég byrjaði á því að teikna grunnform flugvélarinnar í Fusion 360 með myndir af Cessna 172 sem viðmið. Fyrsti parametrinn sem ég skilgreindi var lengd vélarinnar, frá mótor að stéli. Til að einfalda vinnuna bætti ég við öðrum parametra sem var reiknaður sem hlutfall af þessari lengd, sem gerði teikninguna skalanlega og auðveldaði breytingar.</p>
+
+            <p>Teikningarferlið tók tíma en var vel þess virði. Ég bjó einnig til parameter fyrir efnisþykkt, sem tryggði að módelið gæti aðlagast mismunandi efnum án þess að breyta grunnteikningunni. Vegna flókinnar lögunar vélarinnar notaði ég loft (loft extrusion) til að móta botn og þak, frekar en að teikna öll form sem sketches. Þetta flýtti fyrir vinnunni og jók nákvæmni, þó ég hafi þurft að endurgera botnplötuna vegna þess að loft extrusion átti erfitt með parametra breytingar, en round 2 af henni gekk vel og virkaði vel með parametrabreytingum.</p>
+
+            <p>Þegar módelið var tilbúið, bjó ég til prufukubb til að mæla festingar með mismunandi kerf stillingum. Að lokum flutti ég módelið út sem DXF-skrá og undirbjó hana fyrir laserskurð.</p>
+        </div>
+        <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/Teikning.JPG" style="width:100%">
+    <div class="text">Upprunaleg teikning</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/Sketch.JPG" style="width:100%">
+    <div class="text">Sketch hliðrun</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/Loft.JPG" style="width:100%">
+    <div class="text">Loft á milli sketcha</div>
+  </div>
+            
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/Milli.JPG" style="width:100%">
+    <div class="text">Millistig modelsins</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/lokin.JPG" style="width:100%">
+    <div class="text">Loka model</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/Testkubbur.JPG" style="width:100%">
+    <div class="text">Test kubbur</div>
+  </div>
+            
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/Flatt.JPG" style="width:100%">
+    <div class="text">Flatt út model</div>
+  </div>            
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+    </section>
+    
+    
+    <section>
+        <div class="inner">
+            <header class="major">
+                <h2>Módel sýnishorn</h2>
+            </header>
+    <center>
+    <iframe src="https://gmail4821723.autodesk360.com/shares/public/SH30dd5QT870c25f12fcdbe9491486fc51f0?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe></center>
+        </div>
+    </section>
+
+    <!-- Útskurður -->
+    <section id="one">
+        <div class="inner">
+            <header class="major">
+                <h2>Útskurður</h2>
+            </header>
+            <p>Ég fór í VR3 og byrjaði á því að skera út vínylinn. Það gekk hratt og örugglega.</p>
+            <p>Þegar kom að laserskurðinum var félagi minn að gera kerf mælingar, og ég tók þátt í því. Við komumst að því að kerfið væri í kringum <strong>0.37mm</strong>. Ég skar fyrst út prófukubbinn minn með þessari stillingu en fann að það var of lítið. Ég prófaði að breyta því í <strong>0.45mm</strong>, en það var of stórt. Eftir nokkrar tilraunir endaði ég á <strong>0.43mm</strong>, sem reyndist virka best.</p>
+            <div class="box alt">
+                <div class="row gtr-50 gtr-uniform">
+				<div class="col-4"><span class="image fit"><img src="images/Kerf.jpg" alt="" /></span></div>
+				<div class="col-4"><span class="image fit"><img src="images/Testkubbur1.jpg" alt="" /></span></div>
+				<div class="col-4"><span class="image fit"><img src="images/Testkubbur2.jpg" alt="" /></span></div>
+            
+            <p>Eftir að hafa fínstillt kerfið skar ég út allt módelið og setti það saman. Niðurstaðan var mjög góð, og módelið hélt sér vel saman með geirnegldum festingum.</p>
+                    
+        </div>
+    </section>
+
+    <!-- Áskoranir og lausnir -->
+    <section id="one">
+        <div class="inner">
+            <header class="major">
+                <h2>Áskoranir og lausnir</h2>
+            </header>
+            <span class="image right"><img style="width:300px;height:250px" src="images/Vandamal.JPG" alt="" /></span>
+            <p>Ein helsta áskorunin var að stilla parametrana þannig að módelið myndi halda formi sínu án þess að þurfa að breyta teikningunni í hvert sinn. Með því að nota hlutfallslega parametra tókst mér að leysa þetta vandamál.</p>
+            <p>Annað vesen var að breyta parametrum eftir á án þess að formið brenglaðist, sérstaklega með botnplötuna. Ég þurfti að endurgera hana en eftir nokkrar tilraunir virkaði það vel.</p>
+            
+        </div>
+    </section>
+
+    <!-- Lokaorð -->
+    <section id="one">
+        <div class="inner">
+            <header class="major">
+                <h2>Lokaorð</h2>
+            </header>
+            <p>Þetta verkefni gaf mér dýpri skilning á parametrískri hönnun og laserskurði. Ég lærði mikið um mikilvægi nákvæmra stillinga og hvernig parametrahönnun getur einfaldað vinnu við flóknar teikningar.</p>
+            <span class="image fit"><img src="images/final.jpg"alt="" /></span>
+            
+        </div>
+    </section>
+</div>
 
 
 				<!-- Footer -->
